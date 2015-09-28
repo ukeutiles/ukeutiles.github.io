@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotienidrocA | Ukeútiles</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/static/css/pure-min.css">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="/static/css/side-menu-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="/static/css/side-menu.css">
+    <!--<![endif]-->
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <div id="layout">
+        <a href="#menu" id="menuLink" class="menu-link"><span></span></a>
+        <div id="menu">
+            <div class="pure-menu">
+                <a href="/" class="pure-menu-heading">Ukeútiles</a>
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="/canciones/" class="pure-menu-link">Cancioneitor</a></li>
+                    <li class="pure-menu-item"><a href="/formateitor/" class="pure-menu-link">Formateitor</a></li>
+                    <li class="pure-menu-item"><a href="/acordineitor/" class="pure-menu-link">Acordineitor</a></li>
+                    <li class="pure-menu-item"><a href="/rotienidroca/" class="pure-menu-link">rotienidrocA</a></li>
+                    <li class="pure-menu-item"><a href="/creditos/" class="pure-menu-link">Créditos</a></li>
+                    <li class="pure-menu-item"><a href="/contacto/" class="pure-menu-link">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            
+            <div class="header">
+                <h1>rotienidrocA</h1>
+                <h2>Buscador de acordes inverso para ukelele</h2>
+            </div>
+            
+            <div class="content">
+                
+<div class="pure-g centered">
+    <div class="pure-u-1">
+        <div class="editorSurface">
+            <canvas id="cursorCanvas" width="300" height="270"></canvas>
+            <canvas id="diagramCanvas" width="300" height="270"></canvas>
+        </div>
+    </div>
+</div>
+<div class="pure-g centered">
+    <div class="pure-u-1">
+        <h2 id="chordMatches"></h2>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/ui.js"></script>
+    
+
+<script type="text/javascript" src="/static/js/ukeGeeks.scriptasaurus.min.js"></script>
+<script type="text/javascript" src="/static/js/ugsChordBuilder.js"></script>
+<script type="text/javascript" src="/static/js/chordeditor.reverseFinder.js"></script>
+<script type="text/javascript">
+    var chordFinder = new ugsChordBuilder.reverseFinder();
+    chordFinder.run();
+</script>
+
+</body>
+</html>

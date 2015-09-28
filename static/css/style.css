@@ -1,0 +1,151 @@
+@media print
+{
+    body
+    {
+        margin: 0mm 0mm 0mm 0mm;
+    }
+    #menu
+    {
+        display: none !important;
+    }
+    #layout {
+        padding-left: 0;
+    }
+    .header {
+         padding: 0;
+    }
+    .metaInfo {
+        display: none !important;
+    }
+    .content {
+        padding-top: 0;
+    }
+}
+
+h2, h3, h4, h5 {
+    font-family: Oswald;
+}
+
+.uke-img {
+    height: auto;
+    max-width: 100%;
+}
+
+.centered {
+    text-align: center
+}
+
+.metaInfo ul {
+    font-size: 0.8em;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#ukeSongText {
+    padding-top: 1em;
+}
+
+pre.ugsChords {
+    overflow: visible;
+}
+
+.ugsComment {
+    border-left: 0.5em solid #ccc;
+    text-indent: 1em;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #222;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+    font-family: Oswald;
+}
+
+.ugsChords {
+    line-height: 2.2;
+    font-family: Merriweather;
+}
+
+.ugsChords code {
+    display: inline-block;
+    font-weight: normal;
+    font-family: Oswald;
+    position: relative;
+    vertical-align: middle;
+}
+
+.ugsChords code strong {
+    position: absolute;
+    top: -2.1em;
+    line-height: 1.8;
+}
+
+.ugsChords code em {
+    font-size: 0.9em;
+    font-style: normal;
+    color: #1f8dd6;
+    margin: 0 -4px;
+}
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-error {
+    background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.button-warning {
+    background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.button-secondary {
+    background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+.pure-menu-heading {
+    font-family: Oswald;
+    color: #1f8dd6;
+}
+
+.ejemplo-formateitor {
+    background-color: #eee;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+textarea {
+  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+}
+
+.editorSurface {
+    height: 270px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+}
+
+.editorSurface canvas {
+    border: none;
+    cursor: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+#diagramCanvas {
+    z-index: 1;
+}
+
+#cursorCanvas {
+    z-index: 2;
+}
