@@ -86,6 +86,10 @@ pre.ugsChords {
     margin: 0 -4px;
 }
 
+.ugsColumn {
+    padding-top: 0.2em;
+}
+
 .button-success,
 .button-error,
 .button-warning,
